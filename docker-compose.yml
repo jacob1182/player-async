@@ -1,0 +1,34 @@
+version: '3.6'
+
+services:
+  server:
+    build: player-server/.
+    ports:
+      - "65432:65432"
+    restart: always
+    env_file:
+      - docker/rmi.env
+
+  player1:
+    build: player-client/.
+    restart: always
+    stdin_open: true
+    tty: true
+    env_file:
+      - docker/rmi.env
+    links:
+      - server
+    environment:
+      PLAYER_NAME: player1
+
+  player2:
+    build: player-client/.
+    restart: always
+    stdin_open: true
+    tty: true
+    env_file:
+      - docker/rmi.env
+    links:
+      - server
+    environment:
+      PLAYER_NAME: player2
