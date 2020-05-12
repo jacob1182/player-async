@@ -9,7 +9,7 @@ import static java.lang.String.format;
  *
  * @implNote
  * Immutability is enforced for thread-safety and
- * avoid race conditions when multiple tenants hold the same instance
+ * avoid race conditions when multiple bearers hold the same instance
  * @author jacob1182
  * */
 public class Message implements Serializable {
