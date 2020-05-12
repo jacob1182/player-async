@@ -7,7 +7,7 @@ import java.util.Map;
  * Auxiliary class to manage message counters.
  *
  * @apiNote
- * Each player has its own MessageCounter, and can not be shared between players
+ * Each player has its own MessageCounter, and can not be shared among players
  * @author jacob1182
  **/
 public class MessageCounter {
