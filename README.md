@@ -12,7 +12,15 @@ On the other hand the [player-async](https://github.com/jacob1182/player-async) 
 - player-server
 - player-client
 
-Go on to the [Installation](#Installation) section for details on how to deploy & use it .
+Go on to the [Installation](#installation) section for details on how to deploy & use it .
+
+### Topics
+1. [Considerations](#considerations)
+2. [Installation](#installation)
+3. [Running the clients](#running_the_clients)
+4. [Sending a message](#sending_a_message)
+
+#### Considerations
 
 These following technologies were considered in order to comply with the requirement of pass messages through different processes.
 - Process IO handlers
@@ -30,11 +38,6 @@ The JVM provides a simple interface to implement RPC communications. In this way
 
 - Robustness:
 RMI is already used in production for many years, any other solution I implement can not beat that.
-
-### Topics
-1. Installation
-2. Running the clients
-3. Sending a message
 
 #### Installation
 Use the easy provided installation tool `player-installer.sh`.
