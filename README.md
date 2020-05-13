@@ -17,8 +17,8 @@ Go on to the [Installation](#installation) section for details on how to deploy 
 ### Topics
 1. [Considerations](#considerations)
 2. [Installation](#installation)
-3. [Running the clients](#running_the_clients)
-4. [Sending a message](#sending_a_message)
+3. [Running the clients](#running-the-clients)
+4. [Sending a message](#sending-a-message)
 
 #### Considerations
 
