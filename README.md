@@ -12,7 +12,7 @@ On the other hand the [player-async](https://github.com/jacob1182/player-async) 
 - player-server
 - player-client
 
-Details on how to deploy & use it go on to the [Installation](#Installation) section.
+Go on to the [Installation](#Installation) section for details on how to deploy & use it .
 
 These following technologies were considered in order to comply with the requirement of pass messages through different processes.
 - Process IO handlers
