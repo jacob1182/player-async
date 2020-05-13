@@ -81,7 +81,7 @@ Select [1-2]:
 
 The `player name` is the name that identifies the player.
 
-####Sending a message
+#### Sending a message
 In order to send a message is needed to provided the `adressee` and the `message payload`.
 Press `1` and then `Enter` and an interactive form will be shown:
 
