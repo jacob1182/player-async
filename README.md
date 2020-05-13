@@ -22,13 +22,13 @@ These following technologies were considered in order to comply with the require
 
 I decided to use RMI based on the following arguments.
 
-- Simplicity
+- Simplicity:
 The JVM provides a simple interface to implement RPC communications. In this way, There is no need to deal with message channel management. For instance:
     - Socket session management.
     - IO Streams management.
     - Service registry + router if REST.
 
-- Robustness
+- Robustness:
 RMI is already used in production for many years, any other solution I implement can not beat that.
 
 ### Topics
