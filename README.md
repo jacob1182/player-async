@@ -1,5 +1,36 @@
 ## Player async messaging
 
+There are 2 solutions to the provided [task](task.txt).
+
+- [player-sync](https://github.com/jacob1182/player-sync)
+- [player-async](https://github.com/jacob1182/player-async)
+
+The [player-sync](https://github.com/jacob1182/player-sync) solution is a simple and minimalistic application focused on the provided requirements. The business model is highlighted without too much of technical details. This project is good to explore only how the business logic works.
+
+On the other hand the [player-async](https://github.com/jacob1182/player-async) solution add complexity due to the technological dependency it has. It comprises of 3 submodules.
+- player-lib
+- player-server
+- player-client
+
+Details on how to deploy & use it go on to the [Installation](#Installation) section.
+
+These following technologies were considered in order to comply with the requirement of pass messages through different processes.
+- Process IO handlers
+- Sockets
+- RMI
+- REST
+
+I decided to use RMI based on the following arguments.
+
+- Simplicity
+The JVM provides a simple interface to implement RPC communications. In this way, There is no need to deal with message channel management. For instance:
+ - Socket session management.
+ - IO Streams management.
+ - Service registry + router if REST.
+
+- Robustness
+RMI is already used in production for many years, any other solution I implement can not beat that.
+
 ### Topics
 1. Installation
 2. Running the clients
